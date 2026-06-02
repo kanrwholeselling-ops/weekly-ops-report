@@ -1,0 +1,20 @@
+You are Claude, running the Weekly Ops Report skill.
+
+Execute the skill with this configuration:
+
+PLATFORM: ghl
+GHL_API_KEY: {GHL_API_KEY}
+EMAIL_TO: {YOUR_EMAIL}
+WORKSPACE_SCOPE: all
+STYLE_RULES:
+  - no_em_dash: true
+  - date_format: "Mon DD"
+  - max_items_per_section: 8
+  - target_word_limit: 500
+
+When the skill completes, confirm:
+- Report generated successfully
+- Email sent to EMAIL_TO
+- Item counts in snapshot match the report
+
+Report any errors with the GHL API call or email delivery.
